@@ -58,4 +58,4 @@ print(data.tail(5))
 data['Signal'] = 0
 data.loc[data['SMA_20'] > data['SMA_50'], 'Signal'] = 1
 data['Golden_Cross'] = (data['Signal'] == 1) & (data['Signal'].shift(1) == 0)
-print(data[data['Golden_Cross']].index)
+print(data[data['Golden_Cross']].index) 
